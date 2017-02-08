@@ -64,9 +64,9 @@ p{
 	width: 47em;
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 770px) {
     .page-content{
-    	width: 87%;
+    	width: 60%;
     }
 }
 
