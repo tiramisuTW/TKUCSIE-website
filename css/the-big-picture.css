@@ -22,10 +22,18 @@ p{
 	font-size: 16px
 }
 
-.full {
-  background: url(../img/123.jpg) no-repeat center center fixed; 
-  background-size: cover;
+.bg-full, .full {
+	position: fixed;
+	height: 100%;
+	width: 100%;
 }
+
+.showbg{
+	background: url('../img/789.jpg') no-repeat center center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
 
 
 
