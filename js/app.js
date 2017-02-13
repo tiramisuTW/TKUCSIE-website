@@ -26,12 +26,12 @@ $(document).ready(function() {
     })
 
 
-    $('.owl-bg').owlCarousel({
-        animateOut: 'slideOutDown',
-        animateIn: 'flipInX',
-        items: 1
+    // $('.owl-bg').owlCarousel({
+    //     animateOut: 'slideOutDown',
+    //     animateIn: 'flipInX',
+    //     items: 1
         
-    });
+    // });
 
 
 });
