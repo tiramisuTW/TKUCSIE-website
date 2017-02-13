@@ -7,8 +7,8 @@ var timeOut;
 $(document).ready(function() {
 
     $('.list-item').each(function(index) {
-        var node = $(this);
-        node.mouseover(function() {
+        var node = $(this);        
+        node.mouseover(function () {
             timeOut = setTimeout(function() {
                 node.animate({
                     'margin-left': -300,
@@ -16,7 +16,7 @@ $(document).ready(function() {
                 }, 300);
             }, 200);
 
-        }).mouseout(function() {
+        }).mouseout(function () {
             node.animate({
                 'margin-left': 0,
                 'opacity': .5
@@ -24,14 +24,5 @@ $(document).ready(function() {
             clearTimeout(timeOut);
         });
     })
-
-
-    // $('.owl-bg').owlCarousel({
-    //     animateOut: 'slideOutDown',
-    //     animateIn: 'flipInX',
-    //     items: 1
-        
-    // });
-
 
 });
