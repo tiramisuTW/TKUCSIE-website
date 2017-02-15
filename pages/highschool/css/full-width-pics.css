@@ -48,18 +48,39 @@ section {
 
 .section-lead {
     margin: 0;
-    font-size: 2em
+    font-size: 2em;
 }
 
 .section-paragraph {
     margin: 30px 0;
     font-size: 1.3em;
+    text-align: justify;
+    text-justify:inter-ideograph;
 }
 
 .block-right{
     text-indent: 2em;
     font-weight: 800;
     font-size: 1.5em;
+}
+
+.section-table {
+    text-align: center;
+}
+
+.section-table-header {
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+.section-table-body {
+    font-size: 1.3em;
+}
+
+/*更動 bootstrap table 設定*/
+.table > tbody > tr > td {
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 footer {
@@ -77,11 +98,11 @@ footer {
     }
 
     .block-right{
-    text-indent: 0;
-    font-weight: 800;
-    font-size: 1.5em;
-    text-align: center;
-}
+        text-indent: 0;
+        font-weight: 800;
+        font-size: 1.5em;
+        text-align: center;
+    }
 }
 
 
