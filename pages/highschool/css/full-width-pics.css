@@ -64,6 +64,7 @@ section {
     font-size: 1.5em;
 }
 
+/**table 手動調整**/
 .section-table {
     text-align: center;
 }
@@ -77,7 +78,7 @@ section {
     font-size: 1.3em;
 }
 
-/*更動 bootstrap table 設定*/
+/**更動 bootstrap table 設定**/
 .table > tbody > tr > td {
     padding-top: 15px;
     padding-bottom: 15px;
