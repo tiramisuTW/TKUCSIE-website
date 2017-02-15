@@ -22,9 +22,9 @@ body {
 }
 
 .image-bg-fluid-height {
-	background: url('../img/123.jpg') no-repeat center center scroll;
+    background: no-repeat center scroll;
     background-size: cover;
-    padding: 100px 0;
+    height: calc(100vh - 50px);
 }
 
 .image-bg-fixed-height {
