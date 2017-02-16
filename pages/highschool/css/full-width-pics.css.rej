@@ -1,0 +1,9 @@
+diff a/pages/highschool/css/full-width-pics.css b/pages/highschool/css/full-width-pics.css	(rejected hunks)
+@@ -78,7 +78,6 @@
+     font-size: 1.3em;
+ }
+ 
+-/*更動 bootstrap table 設定*/
+ /**更動 bootstrap table 設定**/
+ .table > tbody > tr > td {
+     padding-top: 15px;
