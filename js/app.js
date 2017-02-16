@@ -7,7 +7,7 @@ var timeOut;
 $(document).ready(function() {
 
     $('.list-item').each(function(index) {
-        var node = $(this);        
+        var node = $(this);
         node.mouseover(function () {
             timeOut = setTimeout(function() {
                 node.animate({
