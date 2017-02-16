@@ -104,26 +104,20 @@ section {
     font-size: 1.5em;
 }
 
-<<<<<<< HEAD
 /**table 手動調整**/
 .section-table {
     text-align: center;
-=======
-.block-right-text{
-    font-weight: 500;
->>>>>>> 832630c1c44b0cff1d313e81518f229e771a372f
 }
 
+.block-right-text{
+    font-weight: 500;
+}
 
-
-<<<<<<< HEAD
 /**更動 bootstrap table 設定**/
 .table > tbody > tr > td {
     padding-top: 15px;
     padding-bottom: 15px;
 }
-=======
->>>>>>> 832630c1c44b0cff1d313e81518f229e771a372f
 
 footer {
     background-color: #222;
@@ -183,7 +177,6 @@ table{
     background-size: cover;
 }
 
-<<<<<<< HEAD
 .five-table{
     font-weight: 800
 }
@@ -223,7 +216,8 @@ table{
     height: auto;
     max-width: 100%;
     padding-top: 10px;
-=======
+}
+
 .five-table > tbody{
     font-weight: 800;
 }
@@ -254,5 +248,4 @@ table{
 .internship {
     background: url(../img/int1.jpg) no-repeat center center;
     background-size: cover;
->>>>>>> 832630c1c44b0cff1d313e81518f229e771a372f
 }
