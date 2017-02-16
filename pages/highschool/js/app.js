@@ -4,10 +4,10 @@
 
 $(document).ready(function() {
 
-    $("#owl-biography").owlCarousel({
+    $("#owl-gallery").owlCarousel({
         autoPlay: 5000, //Set AutoPlay to 3 seconds
-
-        items : 4,
+        navigation: true,
+        items : 3,
         itemsDesktop : [1199,3],
         itemsDesktopSmall : [979,3]
     });

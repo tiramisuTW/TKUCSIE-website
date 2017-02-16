@@ -156,6 +156,32 @@ footer {
 .dropdown-menu li:hover .sub-menu {visibility: visible;}
 .dropdown:hover .dropdown-menu {display: block;}
 
+/*********
+* 相片輪播
+*********/
+
+#gallery {
+    background-color: #eee;
+}
+
+#owl-gallery div.item {
+    width: 100%;
+    height: 300px;
+    padding: 12px;
+}
+
+#owl-gallery .photo-container {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#owl-gallery .photo-container img {
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
 /********
 * 五年一貫
 *********/
