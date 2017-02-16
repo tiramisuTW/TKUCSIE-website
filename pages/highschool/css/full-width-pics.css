@@ -9,12 +9,17 @@ body {
 }
 
 * {
-    font-family: "微軟正黑體"
+    font-family: "微軟正黑體";
+
 }
 
 .block-center{
     display: block;
     margin: 0 auto
+}
+
+.blank-space {
+    height: 50px
 }
 
 
@@ -70,24 +75,7 @@ section {
     font-size: 1.5em;
 }
 
-.section-table {
-    text-align: center;
-}
 
-.section-table-header {
-    font-weight: 800;
-    font-size: 1.8em;
-}
-
-.section-table-body {
-    font-size: 1.3em;
-}
-
-/*更動 bootstrap table 設定*/
-.table > tbody > tr > td {
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
 
 footer {
     margin: 50px 0;
@@ -123,11 +111,43 @@ footer {
 /********
 * 五年一貫
 *********/
+
+
+table{
+    border-color: black;
+}
+
+/*更動 bootstrap table 設定*/
+.table > tbody > tr > td {
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+
 .five-years {
     background: url(../img/five1.jpg) no-repeat center center;
     background-size: cover;
 }
 
-.five-table{
-    font-weight: 800
+.five-table > tbody{
+    font-weight: 800;
 }
+
+.five-table > tbody > tr > td {
+    border-top: 3px solid #777
+}
+
+
+.section-table {
+    text-align: center;
+}
+
+.section-table-header {
+    font-weight: 800;
+    font-size: 1.8em;
+}
+
+.section-table-body {
+    font-size: 1.3em;
+}
+
