@@ -23,12 +23,12 @@ jQuery(function ($) { "use strict";
         'img/gallery/gallery-photo2.jpg',
         'img/gallery/gallery-photo3.jpg',
 
-        'img/class/language.jpeg',
-        'img/class/computer.jpeg',
-        'img/class/internet.jpeg',
-        'img/class/multi-media.jpeg',
-        'img/class/software.jpeg',
-        'img/class/AI&DM.jpeg',
+        'img/class/language.jpg',
+        'img/class/computer.jpg',
+        'img/class/internet.jpg',
+        'img/class/multi-media.jpg',
+        'img/class/software.jpg',
+        'img/class/AI&DM.jpg',
 
         'img/five-years/five1.jpg',
         'img/five-years/fiveyears.png',
