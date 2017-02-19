@@ -82,8 +82,8 @@ header{
 
 /* fix bootstrap style */
 .navbar-nav>.active>a{
-    background-color: rgb(40, 110, 255) !important;
-    color: #ffcf5f !important;
+    background-color: rgb(70, 150, 255) !important;
+    color: #ffff5a !important;
     font-size: 25px
 }
 
