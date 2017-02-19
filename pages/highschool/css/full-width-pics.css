@@ -43,6 +43,33 @@ body {
     animation-duration: .5s;
 }
 
+/***********
+* preload page
+***********/
+
+#loading-mask {
+    background: #333439;
+    height: 100%;
+    left: 0;
+    opacity: 1;
+    filter: alpha(opacity=100);
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 999999999;
+}
+
+.loading-img {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 50%;
+    width: 100%;
+}
+
+
+
 /********
 * header
 *********/

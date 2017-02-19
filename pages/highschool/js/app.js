@@ -6,7 +6,45 @@
 // wow init
 new WOW().init();
 
+jQuery(function ($) { "use strict";
+    
+    /* ========================================================================= */
+    /*  Page Preloader
+    /* ========================================================================= */
+    $.preload( 
+        'img/header/header-bg.jpg',
 
+        'img/header/H1.jpg',
+        'img/header/H2.jpg',
+        'img/header/123.jpg',
+        'img/header/456.jpg',
+
+        'img/gallery/gallery-photo1.jpg',
+        'img/gallery/gallery-photo2.jpg',
+        'img/gallery/gallery-photo3.jpg',
+
+        'img/class/language.jpeg',
+        'img/class/computer.jpeg',
+        'img/class/internet.jpeg',
+        'img/class/multi-media.jpeg',
+        'img/class/software.jpeg',
+        'img/class/AI&DM.jpeg',
+
+        'img/five-years/five1.jpg',
+        'img/five-years/fiveyears.png',
+        'img/five-years/five-any.png',
+
+        'img/int1.jpg'
+
+    );
+
+
+
+    window.onload = function () {
+        document.getElementById('loading-mask').style.display = 'none';
+    }
+
+});
 
 $(document).ready(function() {
 
