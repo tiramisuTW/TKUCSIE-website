@@ -110,3 +110,70 @@ footer {
 .bs-docs-sidebar .nav>.active>ul.nav {
     display: block;           
 }
+
+
+
+
+
+/* customize */
+body {
+    background-color: #333;
+    color: white;
+    position: relative;
+}
+
+/* .footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #333;
+}
+
+.content {
+    padding-bottom: 150px;
+} */
+
+
+
+
+
+/* line number */
+.line_number {
+    border-right: 1px solid #5f82ff;
+    padding-right: 7px;
+    counter-reset: num -1;
+    /* background-color: #1f38c5; */
+    position: absolute;
+    font-size: .66666667rem;
+    display: block;
+    box-sizing: border-box;
+    /* color: #5f82ff; */
+    color: white;
+    font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+}
+
+.line_number::before {
+    box-sizing: inherit;
+    content: "</";
+    /* background-color: #1f38c5; */
+    font-size: 1rem;
+    position: absolute;
+    right: -8px;
+}
+
+.line_number::after {
+    box-sizing: inherit;
+}
+
+.line_number span {
+    display: block;
+    line-height: 1.5rem;
+}
+
+.line_number span::before {
+    counter-increment: num;
+    content: counter(num, decimal-leading-zero);
+    display: inline-block;
+    box-sizing: inherit;
+}
