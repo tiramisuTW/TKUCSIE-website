@@ -1,0 +1,142 @@
+/*!
+ * Start Bootstrap - The Big Picture (http://startbootstrap.com/)
+ * Copyright 2013-2016 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap/blob/gh-pages/LICENSE)
+ */
+
+body,
+html {
+    padding: 0;
+    margin: 0;
+    overflow: auto;
+    overflow-x: hidden;
+    font-family: "微軟正黑體";
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: none;
+}
+
+p {
+    font-size: 16px
+}
+
+.full {
+    background: url(../img/789.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+
+/*******************
+新增內容
+********************/
+
+
+/***********
+* 底 navbar
+**************/
+
+.dropdown-menu {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.dropdown-menu > li > a {
+    text-decoration: none;
+    color: white
+}
+
+.dropdown-menu li:hover .sub-menu {
+    visibility: visible;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+
+/***********
+* 主要內容
+**************/
+
+.page-content {
+    position: fixed;
+    padding: 50px 24px;
+    pointer-events: none;
+    color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, .5);
+    width: 47em;
+}
+
+@media screen and (max-width: 770px) {
+    .page-content {
+        width: 60%;
+    }
+}
+
+.page-content h1 {
+    font-weight: 900
+}
+
+
+/***********
+* 側邊 nav
+**************/
+
+.nav-right {
+    float: right;
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 520px) {
+    .nav-right {
+        display: none;
+    }
+}
+
+.list-group-item {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #333;
+}
+
+.list-item {
+    width: 600px;
+    background-color: black;
+    opacity: .5;
+}
+
+.item-config {
+    width: 300px;
+    margin-left: 0px;
+    float: left;
+    position: relative;
+    height: calc(33vh - 15px);
+    pointer-events: none;
+}
+
+a.list-group-item .list-group-item-heading {
+    color: white;
+}
+
+a.list-group-item .list-group-item-text {
+    color: white;
+}
+
+.image-box {
+    width: 300px;
+    height: calc(33vh - 15px);
+    overflow: hidden;
+    position: relative;
+    pointer-events: none;
+}
+
+.image-box img {
+    height: calc(33vh - 15px);
+    pointer-events: none;
+}
+
+.show {
+    margin-left: -300px;
+}

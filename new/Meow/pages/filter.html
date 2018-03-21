@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../assets/css/new/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/new/bootstrap-theme.min.css">
+
+</head>
+
+<body>
+
+
+    <div id="itemContainer" class="container">
+        <div id="filter" class="row text-center">
+            <button class="btn btn-sm btn-danger" type="button" data-filter="all">All</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="item" class="row">
+
+
+        </div>
+    </div>
+
+
+
+
+    <!-- Large modal -->
+
+    <div class="modal fade itemShow" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    <div id="itemBg" style="
+                    height: 300px;
+                    width: 100%;
+                    background: url('http://sitcon.org/2017/images/logos/sitcon.png') no-repeat no-repeat center center;
+                    background-size: cover;
+                    ">
+                    </div>
+
+                    <h2 id="itemTitle"></h2>
+                    <p id="itemContent"></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="../assets/js/new/mixitup.min.js"></script>
+    <script src="../assets/js/new/bootstrap.min.js"></script>
+    <script>
+        var data = [{
+                title: 'ABC',
+                img: 'http://sitcon.org/2017/images/logos/sitcon.png',
+                content: 'abc',
+                filter: [
+                    'category-a', 'category-b'
+                ]
+            },
+
+            {
+                title: 'CDE',
+                img: 'http://2015.jsdc.tw/images/og.png',
+                content: 'cde',
+                filter: [
+                    'category-a', 'category-c'
+                ]
+            },
+
+            {
+                title: 'FGH',
+                img: 'https://coscup.org/2016/images/coscup.svg',
+                content: 'fgh',
+                filter: [
+                    'category-d'
+                ]
+            },
+        ]
+
+    </script>
+    <script>
+        function filterFactory(data) {
+            //data is filter name array element
+            return '<button class="btn btn-sm btn-danger" type="button" data-filter=".' + data + '">' + data +
+                '</button>';
+        }
+
+        function itemFactory(data, index) {
+            return `
+            <div class="col-xs-3 mix ` +
+                (function itemClass(data) {
+                    var t = '';
+                    data.filter.forEach(element => {
+                        t += ' .' + element;
+                    })
+                    return t;
+                })(data) +
+                `" data-toggle="modal" data-target=".itemShow" onclick="setDialog(${index})">
+                <div class="thumbnail">
+                    <img src="${data.img}" alt="...">
+                    <div class="caption">
+                        <h3>${data.title}</h3>
+                        <p>${data.content}</p>
+                    </div>
+                </div>
+            </div>
+            `
+        }
+
+        function setDialog(index) {
+            var target = data[index];
+
+            $('#itemBg').css({
+                background: 'url(' + target.img + ') no-repeat no-repeat center center',
+                backgroundSize: 'cover'
+            });
+            $('#itemTitle')[0].innerHTML = target.title;
+            $('#itemContent')[0].innerHTML = target.content;
+        }
+
+
+        (function genFilter() {
+            var a = ['category-a', 'category-b', 'category-c', 'category-d']
+
+            a.forEach(element => {
+                $('#filter').append(filterFactory(element));
+            })
+
+            data.forEach((element, index) => {
+                $('#item').append(itemFactory(element, index))
+            })
+        })();
+
+
+        $(document).ready(() => {
+            var mixer = mixitup('#itemContainer', {
+                callbacks: {
+                    onMixStart: function(state, futureState) {
+                        console.log('Starting operation...');
+                    }
+                }
+            });
+        })
+
+    </script>
+</body>
+
+</html>

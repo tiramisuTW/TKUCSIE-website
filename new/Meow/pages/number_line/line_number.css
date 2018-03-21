@@ -1,0 +1,41 @@
+body {
+    background-color: #1f38c5;
+}
+
+.line_number {
+    border-right: 1px solid #5f82ff;
+    padding-right: 7px;
+    counter-reset: num -1;
+    background-color: #1f38c5;
+    position: absolute;
+    font-size: .66666667rem;
+    display: block;
+    box-sizing: border-box;
+    color: #5f82ff;
+    font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+}
+
+.line_number::before {
+    box-sizing: inherit;
+    content: "</";
+    background-color: #1f38c5;
+    font-size: 1rem;
+    position: absolute;
+    right: -8px;
+}
+
+.line_number::after {
+    box-sizing: inherit;
+}
+
+span {
+    display: block;
+    line-height: 1.5rem;
+}
+
+span::before {
+    counter-increment: num;
+    content: counter(num, decimal-leading-zero);
+    display: inline-block;
+    box-sizing: inherit;
+}
