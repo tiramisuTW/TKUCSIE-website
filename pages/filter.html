@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="../assets/css/new/bootstrap.min.css"></link>
-    <link rel="stylesheet" type="text/css" href="../assets/css/new/bootstrap-theme.min.css"></link>
+    <link rel="stylesheet" type="text/css" href="../assets/css/new/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../assets/css/new/bootstrap-theme.min.css">
 
 </head>
 
@@ -66,8 +66,6 @@
 
 
 
-
-
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="../assets/js/new/mixitup.min.js"></script>
     <script src="../assets/js/new/bootstrap.min.js"></script>
@@ -99,6 +97,7 @@
                 ]
             },
         ]
+
     </script>
     <script>
         function filterFactory(data) {
@@ -157,12 +156,13 @@
         $(document).ready(() => {
             var mixer = mixitup('#itemContainer', {
                 callbacks: {
-                    onMixStart: function (state, futureState) {
+                    onMixStart: function(state, futureState) {
                         console.log('Starting operation...');
                     }
                 }
             });
         })
+
     </script>
 </body>
 
