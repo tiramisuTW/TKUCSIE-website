@@ -1,6 +1,14 @@
 /********
 新增
 ********/
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+*{
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+.row{
+  margin: 0;
+}
 
 .dropdown-menu li:hover .sub-menu {
     visibility: visible;
@@ -146,7 +154,7 @@ body {
 
 .line_number span {
     display: block;
-    line-height: 1.5rem;
+    line-height: 1.2rem;
 }
 
 .line_number span::before {
@@ -154,4 +162,35 @@ body {
     content: counter(num, decimal-leading-zero);
     display: inline-block;
     box-sizing: inherit;
+}
+
+.description{
+  margin: 15px 0 35px;
+}
+
+.XD{
+  position: relative;
+  margin: 15px 0;
+}
+.XD::before{
+  content: "";
+  width: 12px;
+  height: 100%;
+  position: absolute;
+  left: -200px;
+  background: #7B8CAE;
+  /* box-shadow: 0 1rem 0 #7B8CAE; */
+}
+
+.XDA{
+  position: relative;
+}
+.XDA::before{
+  content: "";
+  width: 12px;
+  height: 100%;
+  position: absolute;
+  left: -200px;
+  background: #9F7BAE;
+  box-shadow: 0 1rem 0 #9F7BAE;  
 }
