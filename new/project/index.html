@@ -52,15 +52,14 @@
 
 
 
+  <div class="line_number"></div>
+
 
   <!-- main container -->
-  <main class="container">
+  <main class="content container">
     <div class="row">
-      <div class="col-sm-1">
-        <div class="line_number"></div>
-      </div>
 
-      <div class="col-sm-9">
+      <div class="col-sm-9 offset-sm-1">
 
         <div id="Tag1">
           <h1 class="">系所介紹</h1>
@@ -329,8 +328,6 @@
       </div>
 
 
-
-
       <!--Nav Bar -->
       <div class="col-sm-2">
         <nav id="bs-docs-sidebar" class="nav fixed flex-column">
@@ -395,11 +392,55 @@
     crossorigin="anonymous"></script>
 
   <script type="text/javascript">
+    // navbar scrolling active
     $('body').scrollspy({
       target: '#bs-docs-sidebar',
       offset: 200
     });
-    
+  </script>
+
+  <script type="text/javascript">
+    // line number init
+
+
+
+    $(document).ready(() => {
+      console.log($('.content').height())
+
+      for (var i = 0; i <= 500; i++) {
+        $('.line_number').append('<span></span>');
+      }
+
+      $('.line_number').css({
+        'max-height': (Math.round($('.content').height() / 27) ) * 27 + 'px',
+        'overflow': 'hidden'
+      })
+
+      function onElementHeightChange(elm, callback) {
+        var lastHeight = elm.clientHeight,
+          newHeight = 0;
+        (function run() {
+          newHeight = elm.clientHeight;
+          
+          if (lastHeight != newHeight)
+            callback(lastHeight);
+          lastHeight = newHeight;
+
+          if (elm.onElementHeightChangeTimer)
+            clearTimeout(elm.onElementHeightChangeTimer);
+
+          elm.onElementHeightChangeTimer = setTimeout(run, 200);
+        })();
+      }
+
+      onElementHeightChange($('.content')[0], (height) => {
+        console.log('XD')
+        $('.line_number').css({
+          'max-height': (Math.round(height / 27) ) * 27 + 'px',
+          'overflow': 'hidden'
+        })
+      });
+    })
   </script>
 </body>
 

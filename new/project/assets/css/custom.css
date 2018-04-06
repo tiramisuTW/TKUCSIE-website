@@ -1,4 +1,3 @@
-
 /********
 新增
 ********/
@@ -27,7 +26,6 @@
     position: fixed;
 }
 
-
 /* sidebar */
 
 #bs-docs-sidebar {
@@ -36,8 +34,8 @@
     margin-bottom: 20px;
 }
 
-
 /* all links */
+
 #bs-docs-sidebar a {
     color: #999;
     border-left: 2px solid transparent;
@@ -46,15 +44,14 @@
     font-weight: 400;
 }
 
-
 /* nested links */
+
 #bs-docs-sidebar.nav .nav>a {
     padding-top: 1px;
     padding-bottom: 1px;
     padding-left: 30px;
     font-size: 14px;
 }
-
 
 /* active & hover links */
 
@@ -68,7 +65,6 @@
     border-left-color: #563d7c;
 }
 
-
 /* all active links */
 
 #bs-docs-sidebar.nav>a.active,
@@ -76,7 +72,6 @@
 #bs-docs-sidebar.nav>a.active:focus {
     font-weight: 700;
 }
-
 
 /* nested active links */
 
@@ -86,13 +81,11 @@
     font-weight: 500;
 }
 
-
 /* hide inactive nested list */
 
 /* #bs-docs-sidebar.nav .nav {
     display: none;
 } */
-
 
 /* show active nested list */
 
@@ -100,12 +93,65 @@
     display: block;
 }
 
-
-
-
 /* customize */
+
 body {
     background-color: #FFFFFF;
     color: black;
     position: relative;
+}
+
+.footer{
+  position: absolute;
+  bottom: -70px;
+  left: 0;
+  right: 0;
+  background-color: #FFF;
+}
+
+.footer hr {
+  margin-top: 0
+}
+
+
+
+
+
+/* line number */
+.line_number {
+    background-color: #585858;
+    border-right: 3px solid #95989A;
+    padding-right: 7px;
+    counter-reset: num -1;
+    position: absolute;
+    font-size: .66666667rem;
+    display: block;
+    box-sizing: border-box;
+    color: white;
+    font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+    padding-left: 5em;
+    box-shadow: 0 0 0 12px #585858
+}
+
+.line_number::before {
+    box-sizing: inherit;
+    font-size: 18px;
+    position: absolute;
+    right: -8px;
+}
+
+.line_number::after {
+    box-sizing: inherit;
+}
+
+.line_number span {
+    display: block;
+    line-height: 1.5rem;
+}
+
+.line_number span::before {
+    counter-increment: num;
+    content: counter(num, decimal-leading-zero);
+    display: inline-block;
+    box-sizing: inherit;
 }
