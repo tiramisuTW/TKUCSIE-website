@@ -1,76 +1,77 @@
 /********
 新增
 ********/
+
 @import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
-*{
+* {
   font-family: 'Noto Sans TC', sans-serif;
 }
 
-.row{
+.row {
   margin: 0;
 }
 
 .dropdown-menu li:hover .sub-menu {
-    visibility: visible;
+  visibility: visible;
 }
 
 .dropdown:hover .dropdown-menu {
-    display: block;
+  display: block;
 }
 
 .group {
-    background: yellow;
-    width: 200px;
-    height: 500px;
+  background: yellow;
+  width: 200px;
+  height: 500px;
 }
 
 .group .subgroup {
-    background: orange;
-    width: 150px;
-    height: 200px;
+  background: orange;
+  width: 150px;
+  height: 200px;
 }
 
 .fixed {
-    position: fixed;
+  position: fixed;
 }
 
 /* sidebar */
 
 #bs-docs-sidebar {
-    padding-left: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 /* all links */
 
 #bs-docs-sidebar a {
-    color: #999;
-    border-left: 2px solid transparent;
-    padding: 4px 20px;
-    font-size: 16px;
-    font-weight: 400;
+  color: #999;
+  border-left: 2px solid transparent;
+  padding: 4px 20px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 /* nested links */
 
 #bs-docs-sidebar.nav .nav>a {
-    padding-top: 1px;
-    padding-bottom: 1px;
-    padding-left: 30px;
-    font-size: 14px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 30px;
+  font-size: 14px;
 }
 
 /* active & hover links */
 
 #bs-docs-sidebar .nav>a.active,
 #bs-docs-sidebar.nav>a.active,
-#bs-docs-sidebar.nav>a:hover,
-#bs-docs-sidebar.nav>a:focus {
-    color: #563d7c;
-    text-decoration: none;
-    background-color: transparent;
-    border-left-color: #563d7c;
+#bs-docs-sidebar.nav a:hover,
+#bs-docs-sidebar.nav a:focus {
+  color: #563d7c;
+  text-decoration: none;
+  background-color: transparent;
+  border-left-color: #563d7c;
 }
 
 /* all active links */
@@ -78,7 +79,7 @@
 #bs-docs-sidebar.nav>a.active,
 #bs-docs-sidebar.nav>a.active:hover,
 #bs-docs-sidebar.nav>a.active:focus {
-    font-weight: 700;
+  font-weight: 700;
 }
 
 /* nested active links */
@@ -86,7 +87,7 @@
 #bs-docs-sidebar.nav .nav>a.active,
 #bs-docs-sidebar.nav .nav>a.active:hover,
 #bs-docs-sidebar.nav .nav>a.active:focus {
-    font-weight: 500;
+  font-weight: 500;
 }
 
 /* hide inactive nested list */
@@ -98,18 +99,18 @@
 /* show active nested list */
 
 #bs-docs-sidebar.nav .active {
-    display: block;
+  display: block;
 }
 
 /* customize */
 
 body {
-    background-color: #FFFFFF;
-    color: black;
-    position: relative;
+  background-color: #FFFFFF;
+  color: black;
+  position: relative;
 }
 
-.footer{
+.footer {
   position: absolute;
   bottom: -70px;
   left: 0;
@@ -121,58 +122,56 @@ body {
   margin-top: 0
 }
 
-
-
-
-
 /* line number */
+
 .line_number {
-    background-color: #585858;
-    border-right: 3px solid #95989A;
-    padding-right: 7px;
-    counter-reset: num -1;
-    position: absolute;
-    font-size: .66666667rem;
-    display: block;
-    box-sizing: border-box;
-    color: white;
-    font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
-    padding-left: 5em;
-    box-shadow: 0 0 0 12px #585858
+  background-color: #585858;
+  border-right: 3px solid #95989A;
+  padding-right: 7px;
+  counter-reset: num -1;
+  position: absolute;
+  font-size: .66666667rem;
+  display: block;
+  box-sizing: border-box;
+  color: white;
+  font-family: Menlo, Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  padding-left: 5em;
+  box-shadow: 0 0 0 12px #585858
 }
 
 .line_number::before {
-    box-sizing: inherit;
-    font-size: 18px;
-    position: absolute;
-    right: -8px;
+  box-sizing: inherit;
+  font-size: 18px;
+  position: absolute;
+  right: -8px;
 }
 
 .line_number::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .line_number span {
-    display: block;
-    line-height: 1.2rem;
+  display: block;
+  line-height: 1.2rem;
 }
 
 .line_number span::before {
-    counter-increment: num;
-    content: counter(num, decimal-leading-zero);
-    display: inline-block;
-    box-sizing: inherit;
+  counter-increment: num;
+  content: counter(num, decimal-leading-zero);
+  display: inline-block;
+  box-sizing: inherit;
 }
 
-.description{
+.description {
   margin: 15px 0 35px;
 }
 
-.XD{
+.XD {
   position: relative;
   margin: 15px 0;
 }
-.XD::before{
+
+.XD::before {
   content: "";
   width: 12px;
   height: 100%;
@@ -182,15 +181,16 @@ body {
   /* box-shadow: 0 1rem 0 #7B8CAE; */
 }
 
-.XDA{
+.XDA {
   position: relative;
 }
-.XDA::before{
+
+.XDA::before {
   content: "";
   width: 12px;
   height: 100%;
   position: absolute;
   left: -200px;
   background: #9F7BAE;
-  box-shadow: 0 1rem 0 #9F7BAE;  
+  box-shadow: 0 1rem 0 #9F7BAE;
 }
