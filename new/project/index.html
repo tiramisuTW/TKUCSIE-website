@@ -15,6 +15,9 @@
   <link rel="stylesheet" href="./assets/css/custom.css">
 </head>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.7.1/pixi.min.js"></script>
+<script src="/assets/js/pixi-layers.js"></script>
+
 <body>
 
   <nav class="navbar navbar-expand-md navbar-light sticky-top" style="background: #FFFCF5">
@@ -48,7 +51,7 @@
           </div>
         </li>
       </ul>
-      
+
     </div>
   </nav>
 
@@ -392,19 +395,16 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 
+  <!-- navbar scrolling active     -->
   <script type="text/javascript">
-    // navbar scrolling active
     $('body').scrollspy({
       target: '#bs-docs-sidebar',
       offset: 200
     });
   </script>
 
+  <!-- line number init -->
   <script type="text/javascript">
-    // line number init
-
-
-
     $(document).ready(() => {
       console.log($('.content').height())
 
@@ -443,6 +443,8 @@
       });
     })
   </script>
+
+  <script src="/assets/js/background.js"></script>
 </body>
 
 </html>
