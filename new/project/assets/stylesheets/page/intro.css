@@ -1,0 +1,33 @@
+/* line 11, ../../sass/page/intro.scss */
+.description h4, h1 {
+  position: relative;
+  margin: 15px 0;
+}
+/* line 15, ../../sass/page/intro.scss */
+.description h4::before, h1::before {
+  content: "";
+  width: 12px;
+  height: 100%;
+  position: absolute;
+  left: -200px;
+  background: #7B8CAE;
+}
+
+/* line 21, ../../sass/page/intro.scss */
+.description {
+  margin: 15px 0 35px;
+}
+/* line 24, ../../sass/page/intro.scss */
+.description p {
+  position: relative;
+}
+/* line 27, ../../sass/page/intro.scss */
+.description p::before {
+  content: "";
+  width: 12px;
+  height: 100%;
+  position: absolute;
+  left: -200px;
+  background: #9F7BAE;
+  box-shadow: 0 1rem 0 #9F7BAE;
+}

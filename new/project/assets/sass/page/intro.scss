@@ -1,0 +1,40 @@
+
+@mixin line-number-block($color: #9F7BAE){
+  content: "";
+  width: 12px;
+  height: 100%;
+  position: absolute;
+  left: -200px;
+  background: $color;
+}
+
+%title-block{
+  position: relative;
+  margin: 15px 0;
+
+  &::before{
+    @include line-number-block(#7B8CAE);
+  }
+}
+
+
+.description {
+  margin: 15px 0 35px;
+
+  p {
+    position: relative;
+    
+    &::before{
+      @include line-number-block(#9F7BAE);
+      box-shadow: 0 1rem 0 #9F7BAE;
+    }
+  }
+
+  h4{
+    @extend %title-block;
+  }
+}
+
+h1{
+  @extend %title-block;
+}

@@ -1,0 +1,21 @@
+/* line 5, ../sass/index.scss */
+.footer {
+  position: absolute;
+  bottom: -70px;
+  left: 0;
+  right: 0;
+  background-color: #FFF;
+}
+/* line 12, ../sass/index.scss */
+.footer hr {
+  margin-top: 0;
+}
+
+/* line 23, ../sass/index.scss */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+/* line 31, ../sass/index.scss */
+.dropdown .dropdown-menu li:hover .sub-menu {
+  visibility: visible;
+}

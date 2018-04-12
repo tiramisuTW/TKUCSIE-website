@@ -1,0 +1,22 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+/* line 3, ../sass/base.scss */
+* {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* line 7, ../sass/base.scss */
+.fixed {
+  position: fixed;
+}
+
+/* line 11, ../sass/base.scss */
+.row {
+  margin: 0;
+}
+
+/* line 15, ../sass/base.scss */
+body {
+  background-color: #FFFFFF;
+  color: black;
+  position: relative;
+}

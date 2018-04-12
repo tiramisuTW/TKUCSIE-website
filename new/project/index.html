@@ -2,17 +2,17 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
 
-    <!-- bootstrap 4 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <!-- google font -->
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/custom.css">
-    <link rel="stylesheet" href="index.css">
+  <!-- bootstrap 4 -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+  <!-- google font -->
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+  <link href="/assets/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 </head>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.7.1/pixi.min.js"></script>
@@ -20,144 +20,126 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-md navbar-light sticky-top" style="background: #FFFCF5">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-md navbar-light sticky-top" style="background: #FFFCF5">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+      aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-            <div class="mr-auto"></div>
-            <ul class="navbar-nav mr-5">
-                <li class="nav-item px-3 py-2 active">
-                    <a class="nav-link" href="#">Home
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <div class="mr-auto"></div>
+      <ul class="navbar-nav mr-5">
+        <li class="nav-item px-3 py-2 active">
+          <a class="nav-link" href="#">Home
             <span class="sr-only">(current)</span>
           </a>
-                </li>
-                <li class="nav-item px-3 py-2">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item px-3 py-2">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-                <li class="nav-item px-3 py-2 dropdown">
-                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown01">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </li>
-            </ul>
+        </li>
+        <li class="nav-item px-3 py-2">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item px-3 py-2">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+        <li class="nav-item px-3 py-2 dropdown">
+          <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
 
-        </div>
-    </nav>
-
-
-
-    <div class="line_number"></div>
-
-
-    <!-- main container -->
-    <main class="content">
-        <div class="row">
-            <div class="col-sm-12" style="padding-left: 200px">
-
-                <div id="Tag1">
-                    Slide
-                </div>
-                <hr>
-                <div id="Tag2">
-
-                </div>
-
-                <div id="Tag3">
-
-                </div>
-
-                <div id="Tag4">
-
-                </div>
-
-                <div id="Tag5">
-
-                </div>
-
-            </div>
-
-
-
-        </div>
-    </main>
-
-
-    <!-- /.container -->
-    <div class="container-fluid footer">
-        <hr>
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p class="XDA">Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
-        </footer>
     </div>
-    <!-- /.container -->
+  </nav>
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <section class="slide"></section>
 
-    <!-- navbar scrolling active     -->
-    <script type="text/javascript">
-        $('body').scrollspy({
-            target: '#bs-docs-sidebar',
-            offset: 200
-        });
-    </script>
+  <section class="news">
+  </section>
 
-    <!-- line number init -->
-    <script type="text/javascript">
-        $(document).ready(() => {
-            console.log($('.content').height())
+  <section class="lab">
+    <div class="lab-cover"></div>
+    <div class="lab-intro"></div>
+  </section>
 
-            for (var i = 0; i <= 500; i++) {
-                $('.line_number').append('<span></span>');
-            }
+  <section class="intro"></section>
+  <!-- <div class="line_number"></div> -->
 
-            $('.line_number').css({
-                'max-height': (Math.round($('.content').height() / 21)) * 21 + 'px',
-                'overflow': 'hidden'
-            })
 
-            function onElementHeightChange(elm, callback) {
-                var lastHeight = elm.clientHeight,
-                    newHeight = 0;
-                (function run() {
-                    newHeight = elm.clientHeight;
+  <!-- /.container -->
+  <div class="container-fluid footer">
+    <hr>
+    <!-- Footer -->
+    <footer>
+      <div class="row">
+        <div class="col-lg-12">
+          <p class="XDA">Copyright &copy; Your Website 2014</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- /.container -->
 
-                    if (lastHeight != newHeight)
-                        callback(lastHeight);
-                    lastHeight = newHeight;
 
-                    if (elm.onElementHeightChangeTimer)
-                        clearTimeout(elm.onElementHeightChangeTimer);
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
 
-                    elm.onElementHeightChangeTimer = setTimeout(run, 200);
-                })();
-            }
+  <!-- navbar scrolling active     -->
+  <script type="text/javascript">
+    $('body').scrollspy({
+      target: '#bs-docs-sidebar',
+      offset: 200
+    });
+  </script>
 
-            onElementHeightChange($('.content')[0], (height) => {
-                console.log('XD')
-                $('.line_number').css({
-                    'max-height': (Math.round(height / 21)) * 21 + 'px',
-                    'overflow': 'hidden'
-                })
-            });
+  <!-- line number init -->
+  <script type="text/javascript">
+    $(document).ready(() => {
+      console.log($('.content').height())
+
+      for (var i = 0; i <= 500; i++) {
+        $('.line_number').append('<span></span>');
+      }
+
+      $('.line_number').css({
+        'max-height': (Math.round($('.content').height() / 21)) * 21 + 'px',
+        'overflow': 'hidden'
+      })
+
+      function onElementHeightChange(elm, callback) {
+        var lastHeight = elm.clientHeight,
+          newHeight = 0;
+        (function run() {
+          newHeight = elm.clientHeight;
+
+          if (lastHeight != newHeight)
+            callback(lastHeight);
+          lastHeight = newHeight;
+
+          if (elm.onElementHeightChangeTimer)
+            clearTimeout(elm.onElementHeightChangeTimer);
+
+          elm.onElementHeightChangeTimer = setTimeout(run, 200);
+        })();
+      }
+
+      onElementHeightChange($('.content')[0], (height) => {
+        console.log('XD')
+        $('.line_number').css({
+          'max-height': (Math.round(height / 21)) * 21 + 'px',
+          'overflow': 'hidden'
         })
-    </script>
+      });
+    })
+  </script>
 
 
 </body>

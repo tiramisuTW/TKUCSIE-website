@@ -1,0 +1,132 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanstc.css);
+/* line 3, ../sass/base.scss */
+* {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+/* line 7, ../sass/base.scss */
+.fixed {
+  position: fixed;
+}
+
+/* line 11, ../sass/base.scss */
+.row {
+  margin: 0;
+}
+
+/* line 15, ../sass/base.scss */
+body {
+  background-color: #FFFFFF;
+  color: black;
+  position: relative;
+}
+
+/* line 5, ../sass/index.scss */
+.footer {
+  position: absolute;
+  bottom: -70px;
+  left: 0;
+  right: 0;
+  background-color: #FFF;
+}
+/* line 12, ../sass/index.scss */
+.footer hr {
+  margin-top: 0;
+}
+
+/* line 23, ../sass/index.scss */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+/* line 31, ../sass/index.scss */
+.dropdown .dropdown-menu li:hover .sub-menu {
+  visibility: visible;
+}
+
+/* line 3, ../sass/page/home.scss */
+section {
+  width: 100%;
+  height: 500px;
+}
+
+/* line 8, ../sass/page/home.scss */
+section.slide {
+  background-color: #abc;
+}
+
+/* line 13, ../sass/page/home.scss */
+section.news {
+  background-color: #bac;
+}
+
+/* line 19, ../sass/page/home.scss */
+section.lab {
+  background-color: #aac;
+  word-spacing: 0;
+  line-height: 0;
+  font-size: 0;
+}
+/* line 25, ../sass/page/home.scss */
+section.lab .lab-cover {
+  display: inline-block;
+  background-color: #9dd;
+  width: 500px;
+  height: 100%;
+  position: relative;
+}
+/* line 32, ../sass/page/home.scss */
+section.lab .lab-cover::after {
+  content: '';
+  width: 200px;
+  height: 100%;
+  background: linear-gradient(to right, transparent, #333);
+  display: block;
+  position: absolute;
+  right: 0;
+}
+/* line 43, ../sass/page/home.scss */
+section.lab .lab-intro {
+  display: inline-block;
+  background-color: #333;
+  width: calc(100% - 500px);
+  height: 100%;
+}
+
+/* line 51, ../sass/page/home.scss */
+section.intro {
+  background-color: #eac;
+}
+
+/* line 11, ../sass/page/intro.scss */
+.description h4, h1 {
+  position: relative;
+  margin: 15px 0;
+}
+/* line 15, ../sass/page/intro.scss */
+.description h4::before, h1::before {
+  content: "";
+  width: 12px;
+  height: 100%;
+  position: absolute;
+  left: -200px;
+  background: #7B8CAE;
+}
+
+/* line 21, ../sass/page/intro.scss */
+.description {
+  margin: 15px 0 35px;
+}
+/* line 24, ../sass/page/intro.scss */
+.description p {
+  position: relative;
+}
+/* line 27, ../sass/page/intro.scss */
+.description p::before {
+  content: "";
+  width: 12px;
+  height: 100%;
+  position: absolute;
+  left: -200px;
+  background: #9F7BAE;
+  box-shadow: 0 1rem 0 #9F7BAE;
+}

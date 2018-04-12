@@ -1,0 +1,37 @@
+
+
+
+// footer
+.footer {
+  position: absolute;
+  bottom: -70px;
+  left: 0;
+  right: 0;
+  background-color: #FFF;
+
+  hr {
+    margin-top: 0;
+  }
+}
+
+
+
+// navbar
+
+.dropdown {
+  &:hover{
+    .dropdown-menu {
+      display: block;
+    }
+  }
+
+  .dropdown-menu{
+    li{
+      &:hover{
+        .sub-menu{
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
