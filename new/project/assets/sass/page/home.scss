@@ -1,53 +1,68 @@
-
-
-section{
-  width: 100%;
-  height: 500px;
+section {
+    width: 100%;
+    height: 500px;
 }
 
-section.slide{
-  background-color: #abc;
+section.slide {
+    background-color: #abc;
 }
 
-
-section.news{
-  background-color: #bac;
+section.news {
+    background-color: #bac;
 }
 
-
-$lab-cover-size: 500px;
-section.lab{
-  background-color: #aac;
-  word-spacing: 0;
-  line-height: 0;
-  font-size: 0;
-
-  .lab-cover{
-    display: inline-block;
-    background-color: #9dd;
-    width: $lab-cover-size;
-    height: 100%;
-    position: relative;
-
-    &::after{
-      content: '';
-      width: 200px;
-      height: 100%;
-      background: linear-gradient(to right, rgba(0,0,0,0) , #333);
-      display: block;
-      position: absolute;
-      right: 0;
+$lab-cover-size: 700px;
+section.lab {
+    background-color: #aac;
+    word-spacing: 0;
+    line-height: 0;
+    font-size: 0;
+    .lab-cover {
+        display: inline-block;
+        background-color: #9dd;
+        width: $lab-cover-size;
+        height: 100%;
+        position: relative;
+        &::after {
+            content: '';
+            width: 200px;
+            height: 100%;
+            background: linear-gradient(to right, rgba(0, 0, 0, 0), #333);
+            display: block;
+            position: absolute;
+            right: 0;
+        }
     }
-  }
-
-  .lab-intro{
-    display: inline-block;    
-    background-color: #333;
-    width: calc(100% - #{$lab-cover-size});
-    height: 100%;
-  }
+    .lab-intro {
+        display: inline-block;
+        background-color: #333;
+        width: calc(100% - #{$lab-cover-size});
+        height: 100%;
+        vertical-align: top;
+        color: aliceblue;
+        padding: 50px;
+        h4 {
+            font-size: 26px;
+            font-weight: 700;
+            border-bottom: 1px solid #fff;
+            display: block;
+            margin-bottom: 15px;
+        }
+        p {
+            font-size: 16px;
+            padding-left: 15px;
+            line-height: 1.4;
+            height: 200px;
+            overflow-y: auto;
+        }
+        div.lab-class {
+            width: 100%;
+            height: 120px;
+            background-color: yellow;
+        }
+    }
 }
 
-section.intro{
-  background-color: #eac;
+section.intro {
+    background-color: #eac;
 }

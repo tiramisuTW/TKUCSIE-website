@@ -1,35 +1,35 @@
-/* line 3, ../../sass/page/home.scss */
+/* line 1, ../../sass/page/home.scss */
 section {
   width: 100%;
   height: 500px;
 }
 
-/* line 8, ../../sass/page/home.scss */
+/* line 6, ../../sass/page/home.scss */
 section.slide {
   background-color: #abc;
 }
 
-/* line 13, ../../sass/page/home.scss */
+/* line 10, ../../sass/page/home.scss */
 section.news {
   background-color: #bac;
 }
 
-/* line 19, ../../sass/page/home.scss */
+/* line 15, ../../sass/page/home.scss */
 section.lab {
   background-color: #aac;
   word-spacing: 0;
   line-height: 0;
   font-size: 0;
 }
-/* line 25, ../../sass/page/home.scss */
+/* line 20, ../../sass/page/home.scss */
 section.lab .lab-cover {
   display: inline-block;
   background-color: #9dd;
-  width: 500px;
+  width: 700px;
   height: 100%;
   position: relative;
 }
-/* line 32, ../../sass/page/home.scss */
+/* line 26, ../../sass/page/home.scss */
 section.lab .lab-cover::after {
   content: '';
   width: 200px;
@@ -39,15 +39,40 @@ section.lab .lab-cover::after {
   position: absolute;
   right: 0;
 }
-/* line 43, ../../sass/page/home.scss */
+/* line 36, ../../sass/page/home.scss */
 section.lab .lab-intro {
   display: inline-block;
   background-color: #333;
-  width: calc(100% - 500px);
+  width: calc(100% - 700px);
   height: 100%;
+  vertical-align: top;
+  color: aliceblue;
+  padding: 50px;
+}
+/* line 44, ../../sass/page/home.scss */
+section.lab .lab-intro h4 {
+  font-size: 26px;
+  font-weight: 700;
+  border-bottom: 1px solid #fff;
+  display: block;
+  margin-bottom: 15px;
+}
+/* line 51, ../../sass/page/home.scss */
+section.lab .lab-intro p {
+  font-size: 16px;
+  padding-left: 15px;
+  line-height: 1.4;
+  height: 200px;
+  overflow-y: auto;
+}
+/* line 58, ../../sass/page/home.scss */
+section.lab .lab-intro div.lab-class {
+  width: 100%;
+  height: 120px;
+  background-color: yellow;
 }
 
-/* line 51, ../../sass/page/home.scss */
+/* line 66, ../../sass/page/home.scss */
 section.intro {
   background-color: #eac;
 }
