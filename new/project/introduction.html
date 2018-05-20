@@ -2,18 +2,17 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
 
-  <!-- bootstrap 4 -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-    crossorigin="anonymous">
-  <!-- google font -->
-  <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
-  <link href="/assets/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
-  <link href="/assets/stylesheets/plugins/custom.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <!-- bootstrap 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet">
+    <link href="/assets/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+    <link href="/assets/stylesheets/plugins/custom.css" media="screen, projection" rel="stylesheet" type="text/css" />
 </head>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.7.1/pixi.min.js"></script>
@@ -21,431 +20,680 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-md navbar-light sticky-top" style="background: #FFFCF5">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
-      aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-md navbar-light sticky-top" style="background: #FFFCF5">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-      <div class="mr-auto"></div>
-      <ul class="navbar-nav mr-5">
-        <li class="nav-item px-3 py-2 active">
-          <a class="nav-link" href="#">Home
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <div class="mr-auto"></div>
+            <ul class="navbar-nav mr-5">
+                <li class="nav-item px-3 py-2 active">
+                    <a class="nav-link" href="#">Home
             <span class="sr-only">(current)</span>
           </a>
-        </li>
-        <li class="nav-item px-3 py-2">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item px-3 py-2">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-        <li class="nav-item px-3 py-2 dropdown">
-          <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">Dropdown</a>
-          <div class="dropdown-menu" aria-labelledby="dropdown01">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </li>
-      </ul>
+                </li>
+                <li class="nav-item px-3 py-2">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item px-3 py-2">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+                <li class="nav-item px-3 py-2 dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
 
+        </div>
+    </nav>
+
+
+
+    <div class="line_number"></div>
+
+
+    <!-- main container -->
+    <main class="content">
+        <div class="row">
+            <div class="col-sm-10" style="padding-left: 200px">
+
+                <div id="Tag1">
+                    <h1>系所介紹</h1>
+                    <hr>
+
+
+                    <div class="description" id="Tag1subtag1">
+                        <h4>
+                            <a href="#">系所介紹與沿革</a>
+                        </h4>
+                        <p>淡江大學資訊工程學系成立於民國58年，以推廣計算機應用教育、培育國家及社會建設之高級資訊人才為目標，進而提升國內資訊工業水準。本系原名『電子計算機科學學系』，是國內最早創立之資訊相關科系；民國59年設立夜間部、67年成立研究所碩士班、78年成立博士班。
+                        </p>
+                        <p>為了符合時代需求，民國81年正式更名為『資訊工程學系』，目前有大學日間部、進學班，研究所 碩士班、博士班；為強化教育體系在職進修功能，於90學年成立碩士在職專班；為期培養更精進專 業的網路與通訊人才，95學年增設成立『資訊網路與通訊碩士班』(104學年度改名『資訊網路與多 媒體碩士班』)；為培育具國際視野的資通訊人才及吸收優秀的國際學生，103學年度增設立『全英 語碩士班』。在教學方面，理論與實際並重，課程涵蓋實務及研究性質。
+                        </p>
+                        <p>本系大學部及研究所於101學年申請『中華工 程教育認證』第二週期性審查並獲得通過，印證了本 系的教育品質與人才培育之成效。
+                        </p>
+
+                    </div>
+
+
+                    <div class="description" id="Tag1subtag2">
+                        <h4>
+                            <a href="#">課程特色</a>
+                        </h4>
+                        <p>1.必修課程以培養基本專業素養為主，選修課程以兼顧時代脈動和應用為主，將全系所課程規納為六大領域：程式語言與電腦學理、電腦硬體系統、網路通訊系統、多媒體技術與應用系統、軟體工程及軟體系統、人工智慧與專家系統等，各領域分成三階層，即為
+                        </p>
+                        <ul>
+                            <li>基礎課程：講授資訊科技之基本理論和應用。</li>
+                            <li>進階課程：進一步探討資訊領域之進階理論和應用課程。</li>
+                            <li>主題課程：針對該領域最新或最熱門之應用主題而設計的課程，如無線通訊、遠距學習生、物資訊、多媒體技術、JAVA網路程式設計、知識管理與電子商務等。
+                            </li>
+                        </ul>
+                        <p>2.由本系課程規劃委員會規劃未來學術發展方向修訂必選修課程，以降低必修課程學分數，而增開 較為實務的選修課程。
+                        </p>
+                        <p>3.確切落實畫分選修課程的領域與開課原則，並預先排定3~4年之授課教師，使學生能有 確切的學習方向，並有系統地吸收專業知識。
+                        </p>
+                        <p>課程地圖</p>
+                        <img class="img-responsive" src="http://placehold.it/800x300" alt="">
+                        <p>資訊工程學系碩士班課程地圖</p>
+                        <img class="img-responsive" src="http://placehold.it/800x300" alt="">
+                        <p>資訊工程學系資訊網路與通訊碩士班課程地圖</p>
+                        <img class="img-responsive" src="http://placehold.it/800x300" alt="">
+                        <p>資訊工程學系碩士在職專班課程地圖</p>
+                        <img class="img-responsive" src="http://placehold.it/800x300" alt="">
+                        <p>畢業出路</p>
+                        <p>本系從創立至今，畢業系友已超過1萬人。系友會組織健全，通佈全省，對於本系畢業生經常予以協 助。本系學生畢業後，有些選擇出國深造或報考國內研究所繼續進修，也有些投身於公民營機構就 職，亦有於大專院校任教，從事教育工作，甚至有不少是自籌資金開辦電腦公司，投入軟、硬體研 發工程，出路廣且多元化。 傑出校友(如同高中生專區傑出校友內容)
+                        </p>
+
+                    </div>
+
+                    <div class="description" id="Tag1subtag3">
+                        <h4>
+                            <a href="#">短中長程目標</a>
+                        </h4>
+                        <p>短程計畫(95學年度)：1年(2006.08~2007.07)</p>
+                        <ul>
+                            <li>執行工程教育認證，並期獲得認證通過。(教育)</li>
+                            <li>全系達到每年至少發表15篇以上被SCI或EI收錄之期刊論文。(研究)</li>
+                            <li>配合工學院實驗室二期改善計畫，推動開設專業軟體工具之實務應用課程，如VHDL、Nios等嵌入式系統工具軟體， Rational、Project等軟體開發工具軟體。(教學)</li>
+                            <li>全系教師擔任學術活動之委員、學術會議或期刊之編審、或一般專案之審查委員或委託等工作之人次達12人次以上。(服務)
+                            </li>
+                            <li>規劃設立跨系所的專業學程，如嵌入式系統學程、無線通訊學程、資通安全學程等。</li>
+                            <li>增聘優秀師資，降低生師比、提升教學品質。</li>
+                        </ul>
+                        <p>中程計畫(96-98學年度)：3年(2007.08~2010.07)</p>
+                        <ul>
+                            <li>持續執行工程教育認證之相關改善，並期持續獲得認證通過。(教育)</li>
+                            <li>積極準備並執行大學系所評鑑。(評鑑)</li>
+                            <li>全系達到每年至少發表23篇以上被SCI或EI收錄之期刊論文，或達到平均每人每年至少一篇被SCI或EI收錄之期刊論文。(研究)
+                            </li>
+                            <li>推動與日本、大陸、俄羅斯的交流、合作與互訪研修計畫，並預計邀請4-8位以上的海外學者訪校並提供短期講座課程。(研究與教學)
+                            </li>
+                            <li>成立網路碩士在職專班的學程，每學年開設至少三門以上之課程。(教學與服務)</li>
+                            <li>全系教師擔任學術活動之委員、學術會議或期刊之編審、或一般專案之審查委員或委託等工作之人次達18人次以上。(服務)
+                            </li>
+                        </ul>
+                        <p>長程計畫(99-103學年度)：5年(2010.08~2015.07)</p>
+                        <ul>
+                            <li>持續執行工程教育認證之相關改善，並期持續獲得認證通過。(教育)</li>
+                            <li>全系達到平均每年每位教師至少發表二篇以上被SCI或EI收錄之期刊論文。(研究)</li>
+                            <li>持續推動國際交流、合作與互訪研修計劃，並爭取主辦國際學術研討會、邀請海外學者訪校並提 供短期講座課程。(研究與教學)
+                            </li>
+                            <li>推動所有學生參加英文能力檢定考試，達一定分數始可畢業。(教學)</li>
+                            <li>持續推動網路碩士在職專班的學程科目達本所科目的1/3。(教學與服務)</li>
+                            <li>全系教師擔任學術活動之委員、學術會議或期刊之編審、或一般專案之審查委員或委託等工作之人次達24人次以上。(服務)
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="description" id="Tag1subtag4">
+                        <h4>
+                            <a href="#">教育目標</a>
+                        </h4>
+                        <img class="img-responsive" src="http://placehold.it/800x300" alt="">
+                    </div>
+
+                    <div class="description" id="Tag1subtag5">
+                        <h4>
+                            <a href="#">特色</a>
+                        </h4>
+                        <p>1.堅強的師資陣容：本系擁有29位專任教授，專任師資人數與陣容勝過部分國立大學。每位教授均學有專精，因此除了專業必修課程外，並提供多樣且熱門的主題選修及專題實驗課程供學生修習。本校專任教師每年所發表的SCI、EI的論文數超越多所國立大學。
+                        </p>
+                        <p>2.多元化的課程：本系必修課程以培養基本專業素養為主，選修課程以兼顧時代脈動和應用為主，將系、所課程歸納為六大領域：程式語言與電腦學理、電腦系統、網路通訊系統、多媒體技術與應用系統、軟體工程及軟體系統、人工智慧與資料探勘。各領域分成三階層，即為 ：
+                        </p>
+                        <ul>
+                            <li>基礎課程：講授資訊科技之基本理論和應用</li>
+                            <li>進階課程：進一步探討資訊領域之進階理論和應用課程</li>
+                            <li>主題課程：針對該領域最新或最熱門之應用主題而設計的課程，如資訊與通訊科技發展、軟體工程、嵌入式系統、資訊安全、影像處理、知識商務、多媒體技術、JAVA網路程式設計、無線感測網路監控技術於生態觀測等
+                            </li>
+                        </ul>
+                        <p>3.完整的學程：本系開授從大學部、碩士班到博士班學位的課程，學程制度規劃完整，對於有心往更高層次資訊技術學理鑽研的學生建設了一個完善的教育與學習環境。參加預研生計畫的大學生可於大四時選修研究所課程，再經由甄試入學後抵免碩士應修學分，就可以提前準備論文與口試。碩士生成績優異者，則可經由直升方式略過碩士文憑直接攻讀博士學位，最快可於三～四年取得博士學位。此外，對於有工作壓力的學生，本系也有進修學士班與碩士在職專班的正式學位學程，提供帶職修習資訊技能與文憑的管道。此外本系畢業生繼續就讀國立大學研究所或繼續往海外升學者眾。
+                        </p>
+
+                        <p>4.國際化交流：本系不僅與國內產學界合作密切，國際化的腳步更是國內160多所大學中的佼佼者，本系舉辦過的國際學術研討會及邀請的海外學者不勝枚舉，此外，透過淡江本身的大三出國留學計劃與研究生交換計劃，學生有許多的機會接觸國際的學術活動，可增長本身的專業學養與國際化的眼界。此外也積極推動資訊菁英合作學習計畫，加強海峽兩岸學術交流。
+                        </p>
+
+                        <p>5.豐沛的系友資源：本系成立於1969年，擁有已超過40屆的畢業系友，系友們服務分布於產官學各界，對於在校生的工讀實習與畢業生的就業與轉業都提供絕佳的人脈資源。此外，本校 畢業校友更結合了資工、資管與管科三系所的系友們成立了『淡江人資訊協進會』，為本校三系的在校生與畢業生提供更廣大的社會資源與就業機會。本系亦於1999年成立『淡江大學 資訊工程系所校友會』，增進資訊工程系所畢業會員及在校學生之聯誼與事業發展，並提供了淡江大學資訊工程系所校友相關之協助。
+                        </p>
+
+                        <p>6.充實的實驗環境：本系教學及研究空間主要位於工學大樓，其中包含一般教室、研究生研究室/實驗室，及系專屬電腦實習實驗室。一般教室皆為多媒體教室，實現多元教學以提昇學習成效；本系教師研究室29間，研究研究室(實驗室)15間，研究領域包含無線通訊、資訊安全、電腦網路、軟體工程、人工智慧、多媒體技術及分散式系統等，提供大三以上學生選擇各專長領域之教師，進行專題研究與實作。另有系專屬電腦實習實驗室2間，提供大學部學生進行基礎程式設計訓練。
+                        </p>
+                    </div>
+                    <div class="description" id="Tag1subtag6">
+                        <h4>
+                            <a href="#">教育成效</a>
+                        </h4>
+                        <ul>
+                            <li>學生應有運用數學、科學及工程知識的能力，並以系統分析及專案管理的方法來解決資訊工程問題。
+                            </li>
+                            <li>學生應熟練使用程式語言、資料結構及作業系統的專業知識。</li>
+                            <li>學生應該熟悉計算機組織與硬體結構，並具備軟體系統分析、設計與應用能力。</li>
+                            <li>學生應具備資訊工程與資訊應用所需的基本數學和物理學的知識。</li>
+                            <li>學生應有線性代數、離散數學、及數值方法的數學能力，並具備應用數學的方法來分析以及推導演繹資料的能力。</li>
+                            <li>學生應具有問題分析與對實驗數據推導解釋的能力。</li>
+                            <li>學生應能夠了解社會生態及經濟發展的脈動，以規劃資訊系統的分析、設計與整合能力。</li>
+                            <li>學生應該具有撰寫計畫書的能力、有效的時程管理能力及資訊專案執行能力。</li>
+                            <li>學生應該具備良好的口語與書面之溝通技巧。</li>
+                            <li>學生應該有團隊合作的精神與能力。</li>
+                            <li>學生應該具有專業及倫理的責任。</li>
+                            <li>學生應該了解終身學習的重要並有持續學習的習慣與能力。</li>
+                            <li>學生應該具有國際觀與時事議題的認知，了解資訊技術對環境、社會及全球的影響。</li>
+                            <li>學生應該至少能夠使用英文於資訊相關領域之學習與交流。</li>
+                            <li>學生應該具有對倫理、文化、藝術的人文素養。</li>
+                        </ul>
+
+                    </div>
+                    <div class="description" id="Tag1subtag7">
+                        <h4>
+                            <a href="#">展望</a>
+                        </h4>
+                        <p>本系持續努力的方向，除了加強教學品質、研究能量，活化專業課程、積極參與及舉辦各種專業和學術的國際研討會與短期講座，以及社會服務工作以外;更將繼續延攬優良師資，增設專題實驗室，加強各研究重點及科技整合的領域，以帶動整合性大型研究計劃和產學合作，提昇本系在資訊工程各領域的學術及專業上的水準。
+                        </p>
+
+                    </div>
+
+                    <div class="description" id="Tag1subtag8">
+                        <h4>
+                            <a href="#">工程教育認證</a>
+                        </h4>
+                        <p>淡江大學資訊工程學系 諮詢委員會</p>
+                        <p>94學年度第一學期，經工程教育認證推動小組討論本系諮詢委員會設置辦法，經系所務會議通過後 ，開始遴選校外委員，並於95年2月10日(94學年度寒假)召開會議，審視本系之教育目標、教學成效 與學生核心能力、課程規劃與組織結構等，並提出相關修訂建議，會議結論並分送工程教育認證推 動小組會議、系課程委員會、系所務會議討論與實施。
+                        </p>
+                        <p>工程教育認證推動小組委員(包括助理助教) 許輝煌、葛煥昭、張志勇、王英宏、石貴平、林慧珍、陳伯榮、黃仁俊、黃心嘉、陳建彰、林其誼 、陳俊豪、潘孟鉉、凃瀞珽、張雅惠、李建宗
+                        </p>
+
+                    </div>
+                    <div class="description" id="Tag1subtag9">
+                        <h4>
+                            <a href="#">認證工程教育認證</a>
+                        </h4>
+                        <p>1989年，美國、加拿大、澳洲、紐西蘭、英國及愛爾蘭等六國所屬的非政府單位(NGO)工程教育認證機構，共同簽署 「華盛頓公約」( Washington Accord )，推行大學工程教育認證。1995年與 1999年，南非以及香港繼而加入， 目前臨時會員國 (provisional signatory)有日本、德國、新加坡、馬來西亞等，台灣、俄羅斯、印度、韓國則為觀察員 。</p>
+                        <p>WA 會員國間彼此承認其通過認證的學系 /學程，各國主流大學亦普遍接受此公約之認證標準並 追求此認證機制的核可，例如美國麻省理工學院(MIT)及加州理工學院(Cal Tech) ，足見認證已經成為國際間大學工程教育的趨勢，其影響深及各國工程教育品質的提昇與教學機制的革新，因此已普 遍受到重視。通過認證學系之大學畢業生，就業後得憑此優勢擴大就業市場，腹地遍及國際，故此公約亦為促進全球工程人才流通的機制。在不久的未來，認證的資格勢必成為學生與家長選擇升學 校系時的重要參 考 。</p>
+                        <p>目前WA各國大多數採取「成果導向」( &quot; outcome-based &quot; )之認證標準，即將學生表現作為教學成果的評量依據，並以促進系所持續改進作為認證的最終目標。各會員國的認證規範追求其實質相當的 (substantially equivalent)內涵，各國認證標準請參考以下為推動「國際工程教育認證」的優點：
+                        </p>
+                        <ul>
+                            <li>提昇工程教育授課品質，改善學生學習效率，並使課程充分配合業界用人所需；</li>
+                            <li>加速國內工程領域科系的整體素質提昇，並促成彼此間之良性競爭；</li>
+                            <li>使系所課程目標可彈性配合科技發展及業界需求進行調整，以增加畢業生之就業機會與發展空間</li>
+                            <li>使各大學院校及科系得依據其教育任務與宗旨找到明確定位，提供產業界多樣且獨特的人才；</li>
+                            <li>經過公正且客觀評鑑所得之與各項資料與結果，可供社會各界作為探討工程教育成果之重要參考指標</li>
+                            <li>強化通過認證系所於國內競爭力，以招收更多優秀學生入學</li>
+                            <li>促使國內工程 教育與國際接軌，得以吸引外籍學生來台就讀</li>
+                            <li>讓國內工程領域畢業生的學歷，可直接獲得WA會員國承認，以使我國工程科系畢業生的就業市場可拓展於全球</li>
+                        </ul>
+                        <p>淡江大學資訊工程系秉持對資訊科技教育品質的執著與持續改善的追求，已於95學年度通過工 程教育認證，象徵著本系在教育目標與教學內涵值得信賴與託付，在此感謝實地認證委員與社會大 眾對本系教育品質的認可。
+                        </p>
+                        <p>參考網站: WA網站：<a href="http://www.washingtonaccord.org/">http://www.washingtonaccord.org/</a></p>
+                        <p>中華工程教育學會：<a href="http://www.ieet.org.tw/">http://www.ieet.org.tw/</a></p>
+
+
+                    </div>
+                    <div class="description" id="Tag1subtag10">
+                        <h4>
+                            <a href="#">學生核心能力</a>
+                        </h4>
+                        <h5>一、大學部(101學年度起)</h5>
+
+                        <ul>
+                            <li>A.程式設計應用能力
+                                <p>有能力以程式設計、系統軟體與軟體應用知識進行系統分析、設計與應用。</p>
+                            </li>
+                            <li>B.數學推理演繹能力
+                                <p>有能力以資訊工程相關的數學、科學與工程知識 進行分析、推理、演繹、發展與應用資訊技術。</p>
+                            </li>
+                            <li>C.資訊系統實作能力
+                                <p>有能力透過邏輯思考、問題分析、實驗執行、數據解釋與推導演繹，結合計算機軟體與硬體設計的 專業知識進行規劃與發展資訊系統。
+                                </p>
+                            </li>
+                            <li>D.網路技術應用能力
+                                <p>有能力應用資訊網路與通訊的專業知識，解決工程問題及規劃網路系統或發展網路應用技術，並善 用網路資源進行多元學習與創新。
+                                </p>
+                            </li>
+                            <li>E.資訊技能就業能力
+                                <p>有能力執行資訊專案，具可塑性及良好的工作態度與學習意願，能有效溝通團隊合作，能快速解決 問題做好時程管理，了解及遵循資訊專業社會責任及資訊倫理。
+                                </p>
+                            </li>
+
+                        </ul>
+                        <h5>二、研究所(101學年度起)</h5>
+                        <ul>
+                            <li>A.獨立解決問題能力
+                                <p>具有面對困難接受挑戰之態度，及獨立探索、推導與設計解決問題的方法與工具之能力。</p>
+                            </li>
+                            <li>B.獨立研究創新能力
+                                <p>具有獨立思考、判斷與分析問題的能力，並能啟發創新思維運用於研究議題。</p>
+                            </li>
+                            <li>C.論文撰寫發表能力
+                                <p>具有良好專業技術論文撰寫及口語表達之能力。</p>
+                            </li>
+                            <li>D.資訊工程研發能力
+                                <p>(資工所)具有運用資訊工程專業領域相關知識與技能，並用以規劃及研發資訊系統的分析、設計、 製作與整合的能力。</p>
+                            </li>
+                            <li>D.資訊網路研發能力
+                                <p>(資網所)具有運用資訊與網路專業領域相關知識與技能，並用以規劃及研發資訊網路的分析、設計 、製作與整合的能力。</p>
+                            </li>
+                            <li>E.專案計畫管理能力
+                                <p>具有專案計畫之規劃、撰寫、領導及管理之能力; 理解專業倫理及社會責任的能力，並以負責任的態 度用於人際溝通、團隊合作及協調整合。</p>
+                            </li>
+                            <li>F.自主終生學習能力
+                                <p>瞭解終生學習的重要，並持續培養自主學習的能力。具有運用外語能力於學習與交流的能力、認知 全球議題，並藉以透析產業趨勢動向與全球化之變遷。</p>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="description" id="Tag1subtag10">
+                        <h4>
+                            <a href="#">諮詢委員會設置辦法</a>
+                        </h4>
+                        <p>94年12月15日系課程委員會議通過</p>
+                        <p>94年12月22日系所務會議通過</p>
+                        <p>第一條： 本系以精進專業教育、提升教學品質為宗旨，以期培育專業技能與全人品德兼具的資訊技 術人才，符合國家與社會之需求為產業所用，特設置本委員會。
+                        </p>
+                        <p>第二條： 本委員會為本系教育目標之制定、課程之規劃與調整、優質教學品質之執行，提供最實際 確切之諮詢與建議。
+                        </p>
+                        <p>第三條： 本委員會之成員應包含系教師代表、學術界代表、產業界代表、系友代表及家長代表，各 若干人組成；其中產業界、系友及家長代表人數應超過委員會總人數之二分之一，以期本系教學方 針之擘畫符合產業市場之需求。
+                        </p>
+                        <p>第四條： 本委員會之各類成員由本系教師、系友會共同推薦，經系所務會議決議後遴聘之。</p>
+                        <p>第五條： 本委員會設置召集人一名，由委員互選之。</p>
+                        <p>第六條： 本委員會每學期必須召開委員會議至少一次，出席人數必須達委員會總人數的二分 之一。</p>
+                        <p>第七條： 本辦法經系所務會議通過後實施，修正時亦同。</p>
+                    </div>
+                    <div class="description" id="Tag1subtag11">
+                        <h4>
+                            <a href="#">學習環境介紹</a>
+                        </h4>
+                        <p>本校全面提供多媒體教室</p>
+                        <p>基本配置：電腦、單槍、布幕、DVD放映機、錄放影機、擴大機、麥克風、喇叭、USB接孔、網路點、NB輸出接點、圖書館、語練教室、音樂教室 文錙音樂廳、文錙藝術中心、海事博物館、物理學系所屬普通物理實驗室。
+                        </p>
+                        <p>資訊中心設於工學大樓之電腦教室2間24小時開放</p>
+                        <p>電腦輔助工程實驗室6間 實施數位系統實驗、數位系統程式設計實驗 本系自有電腦教室1間，實施計算機程式語言、高等程式語言、網路概論等課程之授課與實習、自由上機。各類別研究室15間實施專題實驗分組、研究生論文研究
+                        </p>
+                    </div>
+                    <div class="description" id="Tag1subtag11">
+                        <h4>
+                            <a href="#">實驗室介紹</a>
+                        </h4>
+
+                    </div>
+                </div>
+
+                <div id="Tag2">
+                    <h1>系所成員</h1>
+                    <hr>
+                    <img class="img-responsive" src="http://placehold.it/800x300" alt="">
+
+                    <div class="description" id="Tag2subtag1">
+                        <h4>
+                            <a href="#">系主任</a>
+                        </h4>
+
+                    </div>
+
+                    <div class="description" id="Tag2subtag2">
+                        <h4>
+                            <a href="#">專任師資</a>
+                        </h4>
+
+                    </div>
+
+                    <div class="description" id="Tag2subtag3">
+                        <h4>
+                            <a href="#">兼任師資</a>
+                        </h4>
+
+                    </div>
+
+                    <div class="description" id="Tag2subtag4">
+                        <h4>
+                            <a href="#">助理</a>
+                        </h4>
+
+                    </div>
+                    <div class="description" id="Tag2subtag5">
+                        <h4>
+                            <a href="#">助教</a>
+                        </h4>
+
+                    </div>
+                    <div class="description" id="Tag2subtag6">
+                        <h4>
+                            <a href="#">技士</a>
+                        </h4>
+
+                    </div>
+                </div>
+
+                <div id="Tag3">
+                    <h1>設備資源</h1>
+                    <hr>
+                    <img class="img-responsive" src="http://placehold.it/800x300" alt="">
+
+                    <div class="description" id="Tag3subtag1">
+                        <h4>
+                            <a href="#">電腦輔助工程實驗室、(CAE)管理辦法</a>
+                        </h4>
+                        <h5>壹.電腦教室使用規定</h5>
+                        <ul>
+                            <li>一、本中心之電腦教室為提供工學院各系所師生使用之專用電腦教室，提供工學院學生課業與實習上之使用需求。
+                            </li>
+                            <li>二、非排課時段學生上機使用須憑學生證向值班工讀生登記使用(上課時間除外)，於離開時登記使用時間並簽退，若發現該機有故障之情事，可向值班工讀生登記(上課時間委由授課老 師或助教登記)，再報請本中心處理之。
+                            </li>
+                            <li>三、若使用時發現學生有惡意毀損或偷竊本室之電腦軟、硬體設備者，經查證屬實，除需照毀損部分之設備原價賠償外，並報請所屬之系所依相關規定處分之。
+                            </li>
+                            <li>四、嚴禁攜帶任何飲料、食物進入，以保持電腦室之整潔。</li>
+                            <li>五、嚴禁利用本室電腦上網聊天及打電動。</li>
+                            <li>六、雨具及其他佔空間之個人器具請放置於電腦室門外置物位置。</li>
+                            <li>七、使用學生若發現電腦有故障等異常情形，請立即通知值班工讀生或系上教師紀錄處理，禁止學生自行拆裝或更改電腦之軟體或硬體設定。
+                            </li>
+                            <li>八、禁止自行任意搬動本室之任何硬體設備與拔除網路線。</li>
+                            <li>九、電腦使用完畢，須將電腦正常關機，並將座椅歸位後始可離去。</li>
+                            <li>十、所有電腦均裝有還原卡，重要資料請同學自行儲存備份。</li>
+                            <li>十一、各電腦教室將會依各電腦教室排課空檔定期進行維護更新，如遇維護更新時段將停止該電腦教室之使用，固定更新時段將會於每學期開學後第二週公告。
+                            </li>
+                            <li>十二、電腦教室嚴禁大量列印課程講義，列印內容應以作業為限，且一次以十頁為原則，如發現有大量列印，須向工讀生登記，以便與該課程老師聯絡。
+                            </li>
+                            <li>十三、電腦教室門口及教室內裝設有監控設備，藉以加強安全管理。</li>
+                        </ul>
+                        <h5>貳、電腦室借用辦法</h5>
+                        <ul>
+                            <li>一、電腦教室之排課均由前一學期工學院各系依所需平均分配使用。</li>
+                            <li>二、如因教學之需要須臨時借用電腦教室時，請於借用前二週向所屬系助理提出申請，再經本 中心主任核可。
+                            </li>
+                            <li>三、使用本室電腦設備，得遵守前述之各項使用規定。</li>
+                            <li>四、使用結束後，經值班人員或工讀生檢查後發現有違反使用規定時，將撤銷該申請單位 該學期之借用。
+                            </li>
+                            <li>五、電腦室之申請應以不影響排定於本室之正常上課為優先。</li>
+                        </ul>
+                        <h5>參、電腦室工讀生之權利與義務</h5>
+                        <ul>
+                            <li>一、值班工讀生須依值班表準時到班，不得無故缺班、遲到或擅自離開值班位置。</li>
+                            <li>二、值班工讀生如有調班或代班均須事前填寫值班異動單，經值班人員核可後始可調動。</li>
+                            <li>三、到班或換班時，工讀生須詳填交接事項紀錄，並檢查核對機器及設備狀況，及當班時之使 用電腦人數，如發現任何不符之情事，須立即修正並記錄。
+                            </li>
+                            <li>四、值班工讀生須確實依照電腦使用規定要求使用學生遵守。</li>
+                            <li>五、如發現違規學生，須依規定登記提報。</li>
+                            <li>六、值班時如有發現設備故障等異常情形，請確實填寫設備異常單後，如無法立即修復時，應停止該設備之使用；待設備修復後，由當班工讀生填寫修復紀錄。
+                            </li>
+                            <li>七、晚班結束前，務請事先知會使用者，待學生離開後，逐機檢查是否關機，並於整理環境、關冷氣及各項電源後，確實鎖門始可離開。
+                            </li>
+                            <li>八、如違反上述規定情形嚴重者，將取消其工讀生資格，並不得再提報日後之工讀生甄試。</li>
+                            <li>九、如有未盡之規定，待修(增)定後另行發布實施。</li>
+                        </ul>
+
+
+                    </div>
+
+
+                </div>
+
+                <div id="Tag4">
+                    <h1>學術成果查詢</h1>
+                    <hr>
+
+
+                    <div class="description" id="Tag4subtag1">
+                        <h4>
+                            <a href="#">期刊論文</a>
+                        </h4>
+
+                    </div>
+                    <div class="description" id="Tag4subtag2">
+                        <h4>
+                            <a href="#">研討會論文</a>
+                        </h4>
+
+                    </div>
+                    <div class="description" id="Tag4subtag3">
+                        <h4>
+                            <a href="#">專書</a>
+                        </h4>
+
+                    </div>
+
+                </div>
+
+                <div id="Tag5">
+                    <h1>學生資訊</h1>
+                    <hr>
+
+                    <div class="description" id="Tag5subtag1">
+                        <h4>
+                            <a href="#">獎學金</a>
+                        </h4>
+
+                    </div>
+                    <div class="description" id="Tag5subtag2">
+                        <h4>
+                            <a href="#">修業規定</a>
+                        </h4>
+
+                    </div>
+                    <div class="description" id="Tag5subtag3">
+                        <h4>
+                            <a href="#">學分學程</a>
+                        </h4>
+
+                    </div>
+                    <div class="description" id="Tag5subtag4">
+                        <h4>
+                            <a href="#">表單下載</a>
+                        </h4>
+                        <p>博士班</p>
+                        <p>碩士班</p>
+                        <p>大學部</p>
+
+                    </div>
+                    <div class="description" id="Tag5subtag5">
+                        <h4>
+                            <a href="#">競賽資訊</a>
+                        </h4>
+
+                    </div>
+                    <div class="description" id="Tag5subtag6">
+                        <h4>
+                            <a href="#">學生常用連結</a>
+                        </h4>
+                        <a href="https://www.facebook.com/tkucsieteam/">淡江大學資工系學會</a>
+                        <br>
+                        <a href="https://www.facebook.com/groups/csie.tku.edu.tw/learning_content/">淡江大學資訊工程學系</a>
+                        <br>
+                        <a href="http://www.tku.edu.tw/">淡江大學</a>
+                        <br>
+                        <a href="http://eportfolio.tku.edu.tw/">學生學習歷程</a>
+                        <br>
+                        <a href="http://sinfo.ais.tku.edu.tw/MvcLicense/">英語檢定登入系統</a>
+
+                    </div>
+
+                </div>
+
+                <div id="Tag6">
+                    <h1>活動照片</h1>
+                    <hr>
+
+
+                    <div class="description" id="Tag6subtag1">
+                        <h4>
+                            <a href="#">學術交流</a>
+                        </h4>
+
+                    </div>
+                    <div class="description" id="Tag6subtag2">
+                        <h4>
+                            <a href="#">學生活動</a>
+                        </h4>
+
+                    </div>
+                    <div class="description" id="Tag6subtag3">
+                        <h4>
+                            <a href="#">業界參訪</a>
+                        </h4>
+
+                    </div>
+                    <div class="description" id="Tag6subtag4">
+                        <h4>
+                            <a href="#">系上活動</a>
+                        </h4>
+
+                    </div>
+
+                </div>
+
+                <div id="Tag7">
+                    <h1>高中生專區</h1>
+                    <hr>
+                    <a href="https://csie-8adb9.firebaseapp.com/pages/highschool/index.html">https://csie-8adb9.firebaseapp.com/pages/highschool/index.html</a>
+
+
+
+
+                </div>
+
+            </div>
+
+
+            <!--Nav Bar -->
+            <div class="col-sm-2">
+                <nav id="bs-docs-sidebar" class="nav fixed flex-column">
+                    <a class="nav-link" href="#Tag1">系所介紹
+            <span class="caret"></span>
+          </a>
+                    <nav class="nav flex-column">
+                        <a class="nav-link" href="#Tag1subtag1">系所介紹與沿革</a>
+                        <a class="nav-link" href="#Tag1subtag2">教育目標</a>
+                        <a class="nav-link" href="#Tag1subtag3">短中長程目標</a>
+                        <a class="nav-link" href="#Tag1subtag4">工程教育認證</a>
+                        <a class="nav-link" href="#Tag1subtag5">實驗室介紹</a>
+                    </nav>
+
+                    <a class="nav-link" href="#Tag2">系所成員
+            <span class="caret"></span>
+          </a>
+                    <nav class="nav flex-column">
+                        <a class="nav-link" href="#Tag2subtag1">系主任</a>
+                        <a class="nav-link" href="#Tag2subtag2">專任師資</a>
+                        <a class="nav-link" href="#Tag2subtag3">兼任老師</a>
+                        <a class="nav-link" href="#Tag2subtag4">行政人員</a>
+                    </nav>
+                    <a class="nav-link" href="#Tag3">系所成員
+            <span class="caret"></span>
+          </a>
+                    <nav class="nav flex-column">
+                        <a class="nav-link" href="#Tag3subtag1">系主任</a>
+                        <a class="nav-link" href="#Tag3subtag2">專任師資</a>
+                        <a class="nav-link" href="#Tag3subtag3">兼任老師</a>
+                        <a class="nav-link" href="#Tag3subtag4">行政人員</a>
+                    </nav>
+                    <a class="nav-link" href="#Tag4">Contact</a>
+                    <a class="nav-link" href="#Tag5">Contact</a>
+                </nav>
+            </div>
+
+        </div>
+    </main>
+
+
+    <!-- /.container -->
+    <div class="container-fluid footer">
+        <hr>
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                    <a href="http://www.tku.edu.tw/pdp.asp">個資管理政策聲明</a>
+                    <a href="http://www.tku.edu.tw/privacy.asp">隱私權政策聲明</a>
+                    <a href="http://w3.tku.edu.tw/ipr/index.asp">智慧財產權專區</a>
+
+                </div>
+            </div>
+        </footer>
     </div>
-  </nav>
+    <!-- /.container -->
 
 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-  <div class="line_number"></div>
+    <!-- navbar scrolling active     -->
+    <script type="text/javascript">
+        $('body').scrollspy({
+            target: '#bs-docs-sidebar',
+            offset: 200
+        });
 
+    </script>
 
-  <!-- main container -->
-  <main class="content">
-    <div class="row">
-      <div class="col-sm-10" style="padding-left: 200px">
+    <!-- line number init -->
+    <script type="text/javascript">
+        $(document).ready(() => {
+            console.log($('.content').height())
 
-        <div id="Tag1">
-          <h1>系所介紹</h1>
-          <hr>
-          <img class="img-responsive" src="http://placehold.it/800x300" alt="">
+            for (var i = 0; i <= 500; i++) {
+                $('.line_number').append('<span></span>');
+            }
 
-          <div class="description" id="Tag1subtag1">
-            <h4>
-              <a href="#">系所介紹與沿革</a>
-            </h4>
-            <p>See more snippets like these online store reviews at
-              <a target="_blank" href="http://bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
-            <p>Want to make these reviews work? Check out
-              <strong>
-                <a href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">this building a review system tutorial</a>
-              </strong>over at maxoffsky.com!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          </div>
+            $('.line_number').css({
+                'max-height': (Math.round($('.content').height() / 21)) * 21 + 'px',
+                'overflow': 'hidden'
+            })
 
+            function onElementHeightChange(elm, callback) {
+                var lastHeight = elm.clientHeight,
+                    newHeight = 0;
+                (function run() {
+                    newHeight = elm.clientHeight;
 
-          <div class="description" id="Tag1subtag2">
-            <h4>
-              <a href="#">教育目標</a>
-            </h4>
-            <p>See more snippets like these online store reviews at
-              <a target="_blank" href="http://bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
-            <p>Want to make these reviews work? Check out
-              <strong>
-                <a href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">this building a review system tutorial</a>
-              </strong>over at maxoffsky.com!</p>
-            <p id="XD"></p>
-          </div>
+                    if (lastHeight != newHeight)
+                        callback(lastHeight);
+                    lastHeight = newHeight;
 
-          <div class="description" id="Tag1subtag3">
-            <h4>
-              <a href="#">短中長程目標</a>
-            </h4>
-            <p>See more snippets like these online store reviews at
-              <a target="_blank" href="http://bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
-            <p>Want to make these reviews work? Check out
-              <strong>
-                <a href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">this building a review system tutorial</a>
-              </strong>over at maxoffsky.com!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          </div>
+                    if (elm.onElementHeightChangeTimer)
+                        clearTimeout(elm.onElementHeightChangeTimer);
 
-          <div class="description" id="Tag1subtag4">
-            <h4>
-              <a href="#">工程教育認證</a>
-            </h4>
-            <p>See more snippets like these online store reviews at
-              <a target="_blank" href="http://bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
-            <p>Want to make these reviews work? Check out
-              <strong>
-                <a href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">this building a review system tutorial</a>
-              </strong>over at maxoffsky.com!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          </div>
+                    elm.onElementHeightChangeTimer = setTimeout(run, 200);
+                })();
+            }
 
-          <div class="description" id="Tag1subtag5">
-            <h4>
-              <a href="#">實驗室介紹</a>
-            </h4>
-            <p>See more snippets like these online store reviews at
-              <a target="_blank" href="http://bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
-            <p>Want to make these reviews work? Check out
-              <strong>
-                <a href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">this building a review system tutorial</a>
-              </strong>over at maxoffsky.com!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          </div>
-        </div>
-
-        <div id="Tag2">
-          <h1>系所成員</h1>
-          <hr>
-          <img class="img-responsive" src="http://placehold.it/800x300" alt="">
-
-          <div class="description" id="Tag2subtag1">
-            <h4>
-              <a href="#">系主任</a>
-            </h4>
-            <p>See more snippets like these online store reviews at
-              <a target="_blank" href="http://bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
-            <p>Want to make these reviews work? Check out
-              <strong>
-                <a href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">this building a review system tutorial</a>
-              </strong>over at maxoffsky.com!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          </div>
-
-          <div class="description" id="Tag2subtag2">
-            <h4>
-              <a href="#">專任師資</a>
-            </h4>
-            <p>See more snippets like these online store reviews at
-              <a target="_blank" href="http://bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
-            <p>Want to make these reviews work? Check out
-              <strong>
-                <a href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">this building a review system tutorial</a>
-              </strong>over at maxoffsky.com!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          </div>
-
-          <div class="description" id="Tag2subtag3">
-            <h4>
-              <a href="#">兼任老師</a>
-            </h4>
-            <p>See more snippets like these online store reviews at
-              <a target="_blank" href="http://bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
-            <p>Want to make these reviews work? Check out
-              <strong>
-                <a href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">this building a review system tutorial</a>
-              </strong>over at maxoffsky.com!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          </div>
-
-          <div class="description" id="Tag2subtag4">
-            <h4>
-              <a href="#">行政人員</a>
-            </h4>
-            <p>See more snippets like these online store reviews at
-              <a target="_blank" href="http://bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
-            <p>Want to make these reviews work? Check out
-              <strong>
-                <a href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">this building a review system tutorial</a>
-              </strong>over at maxoffsky.com!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          </div>
-        </div>
-
-        <div id="Tag3">
-          <h1>系所成員</h1>
-          <hr>
-          <img class="img-responsive" src="http://placehold.it/800x300" alt="">
-
-          <div class="description" id="Tag3subtag1">
-            <h4>
-              <a href="#">系主任</a>
-            </h4>
-            <p>See more snippets like these online store reviews at
-              <a target="_blank" href="http://bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
-            <p>Want to make these reviews work? Check out
-              <strong>
-                <a href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">this building a review system tutorial</a>
-              </strong>over at maxoffsky.com!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          </div>
-
-          <div class="description" id="Tag3subtag2">
-            <h4>
-              <a href="#">專任師資</a>
-            </h4>
-            <p>See more snippets like these online store reviews at
-              <a target="_blank" href="http://bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
-            <p>Want to make these reviews work? Check out
-              <strong>
-                <a href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">this building a review system tutorial</a>
-              </strong>over at maxoffsky.com!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          </div>
-
-          <div class="description" id="Tag3subtag3">
-            <h4>
-              <a href="#">兼任老師</a>
-            </h4>
-            <p>See more snippets like these online store reviews at
-              <a target="_blank" href="http://bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
-            <p>Want to make these reviews work? Check out
-              <strong>
-                <a href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">this building a review system tutorial</a>
-              </strong>over at maxoffsky.com!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          </div>
-
-          <div class="description" id="Tag3subtag4">
-            <h4>
-              <a href="#">行政人員</a>
-            </h4>
-            <p>See more snippets like these online store reviews at
-              <a target="_blank" href="http://bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
-            <p>Want to make these reviews work? Check out
-              <strong>
-                <a href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">this building a review system tutorial</a>
-              </strong>over at maxoffsky.com!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          </div>
-        </div>
-
-        <div id="Tag4">
-          <img class="img-responsive" src="http://placehold.it/800x300" alt="">
-
-          <div class="description" id="Tag4subtag1">
-            <h4>
-              <a href="#">Contact</a>
-            </h4>
-            <p>See more snippets like these online store reviews at
-              <a target="_blank" href="http://bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
-            <p>Want to make these reviews work? Check out
-              <strong>
-                <a href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">this building a review system tutorial</a>
-              </strong>over at maxoffsky.com!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          </div>
-        </div>
-
-        <div id="Tag5">
-          <img class="img-responsive" src="http://placehold.it/800x300" alt="">
-
-          <div class="description" id="Tag5subtag1">
-            <h4>
-              <a href="#">Contact</a>
-            </h4>
-            <p>See more snippets like these online store reviews at
-              <a target="_blank" href="http://bootsnipp.com">Bootsnipp - http://bootsnipp.com</a>.</p>
-            <p>Want to make these reviews work? Check out
-              <strong>
-                <a href="http://maxoffsky.com/code-blog/laravel-shop-tutorial-1-building-a-review-system/">this building a review system tutorial</a>
-              </strong>over at maxoffsky.com!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
-          </div>
-        </div>
-
-      </div>
-
-
-      <!--Nav Bar -->
-      <div class="col-sm-2">
-        <nav id="bs-docs-sidebar" class="nav fixed flex-column">
-          <a class="nav-link" href="#Tag1">系所介紹
-            <span class="caret"></span>
-          </a>
-          <nav class="nav flex-column">
-            <a class="nav-link" href="#Tag1subtag1">系所介紹與沿革</a>
-            <a class="nav-link" href="#Tag1subtag2">教育目標</a>
-            <a class="nav-link" href="#Tag1subtag3">短中長程目標</a>
-            <a class="nav-link" href="#Tag1subtag4">工程教育認證</a>
-            <a class="nav-link" href="#Tag1subtag5">實驗室介紹</a>
-          </nav>
-
-          <a class="nav-link" href="#Tag2">系所成員
-            <span class="caret"></span>
-          </a>
-          <nav class="nav flex-column">
-            <a class="nav-link" href="#Tag2subtag1">系主任</a>
-            <a class="nav-link" href="#Tag2subtag2">專任師資</a>
-            <a class="nav-link" href="#Tag2subtag3">兼任老師</a>
-            <a class="nav-link" href="#Tag2subtag4">行政人員</a>
-          </nav>
-          <a class="nav-link" href="#Tag3">系所成員
-            <span class="caret"></span>
-          </a>
-          <nav class="nav flex-column">
-            <a class="nav-link" href="#Tag3subtag1">系主任</a>
-            <a class="nav-link" href="#Tag3subtag2">專任師資</a>
-            <a class="nav-link" href="#Tag3subtag3">兼任老師</a>
-            <a class="nav-link" href="#Tag3subtag4">行政人員</a>
-          </nav>
-          <a class="nav-link" href="#Tag4">Contact</a>
-          <a class="nav-link" href="#Tag5">Contact</a>
-        </nav>
-      </div>
-
-    </div>
-  </main>
-
-
-  <!-- /.container -->
-  <div class="container-fluid footer">
-    <hr>
-    <!-- Footer -->
-    <footer>
-      <div class="row">
-        <div class="col-lg-12">
-          <p>Copyright &copy; Your Website 2014</p>
-        </div>
-      </div>
-    </footer>
-  </div>
-  <!-- /.container -->
-
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script>
-
-  <!-- navbar scrolling active     -->
-  <script type="text/javascript">
-    $('body').scrollspy({
-      target: '#bs-docs-sidebar',
-      offset: 200
-    });
-  </script>
-
-  <!-- line number init -->
-  <script type="text/javascript">
-    $(document).ready(() => {
-      console.log($('.content').height())
-
-      for (var i = 0; i <= 500; i++) {
-        $('.line_number').append('<span></span>');
-      }
-
-      $('.line_number').css({
-        'max-height': (Math.round($('.content').height() / 21)) * 21 + 'px',
-        'overflow': 'hidden'
-      })
-
-      function onElementHeightChange(elm, callback) {
-        var lastHeight = elm.clientHeight,
-          newHeight = 0;
-        (function run() {
-          newHeight = elm.clientHeight;
-
-          if (lastHeight != newHeight)
-            callback(lastHeight);
-          lastHeight = newHeight;
-
-          if (elm.onElementHeightChangeTimer)
-            clearTimeout(elm.onElementHeightChangeTimer);
-
-          elm.onElementHeightChangeTimer = setTimeout(run, 200);
-        })();
-      }
-
-      onElementHeightChange($('.content')[0], (height) => {
-        console.log('XD')
-        $('.line_number').css({
-          'max-height': (Math.round(height / 21)) * 21 + 'px',
-          'overflow': 'hidden'
+            onElementHeightChange($('.content')[0], (height) => {
+                console.log('XD')
+                $('.line_number').css({
+                    'max-height': (Math.round(height / 21)) * 21 + 'px',
+                    'overflow': 'hidden'
+                })
+            });
         })
-      });
-    })
-  </script>
 
-  <script src="/assets/js/background.js"></script>
+    </script>
+
+    <!--    <script src="/assets/js/background.js"></script>-->
 </body>
 
 </html>
