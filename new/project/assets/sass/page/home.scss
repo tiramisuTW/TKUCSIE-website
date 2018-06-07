@@ -72,6 +72,23 @@ section.lab {
     }
 }
 
-section.other {
+section.info {
     background-color: #eac;
+    div.info_btn {
+        height: 150px;
+        width: 150px;
+        padding-top: 20px;
+        border-radius: 100%;
+        background-color: aqua;
+    }
+    div.s_block {
+        height: 300px;
+        text-align: center;
+    }
+    div.info_c {
+        border-left-style: solid;
+    }
+    div.info_a {
+        border-right-style: solid;
+    }
 }

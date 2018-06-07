@@ -125,8 +125,29 @@ section.lab .lab-intro div.lab-class {
 }
 
 /* line 75, ../sass/page/home.scss */
-section.intro {
+section.info {
   background-color: #eac;
+}
+/* line 77, ../sass/page/home.scss */
+section.info div.info_btn {
+  height: 150px;
+  width: 150px;
+  padding-top: 20px;
+  border-radius: 100%;
+  background-color: aqua;
+}
+/* line 84, ../sass/page/home.scss */
+section.info div.s_block {
+  height: 300px;
+  text-align: center;
+}
+/* line 88, ../sass/page/home.scss */
+section.info div.info_c {
+  border-left-style: solid;
+}
+/* line 91, ../sass/page/home.scss */
+section.info div.info_a {
+  border-right-style: solid;
 }
 
 /* line 11, ../sass/page/intro.scss */
